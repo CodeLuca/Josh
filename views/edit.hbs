@@ -1,0 +1,21 @@
+</div> 
+</header>
+
+<div name="start" class="start">
+<!--
+About
+-->
+<div class="container">
+<h2>Joshua's Blog:</h2>
+</div>
+
+<!--
+Projects
+-->
+{{#each posts}}
+<div class="container inline-list">
+  <center><h2>{{title}}</h2></center>
+  {{body}}
+  <a href="/blog/admin/edit/{{title}}"><button type="button" name="button">Edit</button></a>
+</div>
+{{/each}}

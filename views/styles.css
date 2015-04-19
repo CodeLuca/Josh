@@ -1,0 +1,227 @@
+/*============================
+=======MADE BY SHUFFZCO=======
+============================*/
+
+
+body,div,h1,h2,h3,h4,h5,h6,p,ul,li,section{height:auto;margin:0;padding:0;border:0;font-size:100%;vertical-align:baseline;list-style:none;outline:none;-webkit-font-smoothing:antialiased;font-smoothing:antialiased-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;}
+b,strong{font-weight:700}
+h1{font-size:3.6em;font-weight:600;color: white;margin-bottom: 20px;text-shadow: 4px 4px rgba(0,0,0,0.40)}
+h2{font-size:1.6em;font-weight:600;color: #3F7CAC;margin-bottom: 10px;}
+h3{font-size:1.3em;font-weight:400;color: #3F7CAC;}
+p{font-size:1.1em;color: #4f5a65;display: block;margin: 0 auto}
+a{color:#3F7CAC;text-decoration:none;border-bottom: 2px dotted #3F7CAC;}
+a:hover{transition:all ease .5s;border-bottom: none;opacity: .6}
+footer{clear:both;text-align: center;margin-top: 0px;font-size: 0.8em;}
+footer a{color: #3F7CAC;}
+footer a:hover{color: #dcdcdc}
+.clearfix:before,.clearfix:after{content:"";display:table}
+.clearfix:after{clear:both}
+.clearfix{*zoom:1}
+.center{display: block;text-align: center;margin: 0 auto;padding: 0;}
+.start{padding-top: 20px}
+#arrow-down{display: block;margin-top: 60px}
+body{font-family:Open sans,Helvitca,Arial;background:white;}
+
+/*=====================
+=======Container=======
+=====================*/
+.container{
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+}
+.container:nth-child(2){
+    margin: 20px auto;
+    padding: 10px 0 10px 0;
+    border: 2px solid white;
+    border-radius: 4px;
+    box-shadow: 0 1px 1px 1px rgba(0,0,0,0.17);
+}
+.container:nth-child(4){
+    margin: 20px auto;
+    padding: 10px 0 10px 0;
+    border: 2px solid white;
+    border-radius: 4px;
+    box-shadow: 0 1px 1px 1px rgba(0,0,0,0.17);
+}
+/*==================
+=======Header=======
+==================*/
+header{
+    background: #4f5a65;
+    width: 100%;
+    height: 100vh;
+    display: block;
+    padding: 20px 0 100px 0px;
+    box-shadow: 0 1px 1px 1px rgba(0,0,0,0.17);
+}
+header a{
+    text-transform: uppercase;
+    font-weight: 600;
+    color: white;
+    border-bottom: none;
+}
+header h2 a:hover{
+    transition: all ease 1;
+    border-bottom: 2px dotted white;
+}
+header h2{
+    display: inline-block;
+    margin: 0 5px;
+    color: white;
+}
+header img{
+    border: 2px solid #ddd;
+    border-radius: 10%;
+    margin: auto 0;
+    text-align: center;
+}
+
+/*================
+=======Main=======
+================*/
+.inline-list3 a{
+    border: none;
+}
+.inline-list2 li{
+    width: 47%;
+    margin: 30px 0.5%;
+    display: inline-block;
+}
+.inline-list3{}
+.inline-list3 li{
+    width: 32%;
+    margin: 20px 0.5%;
+    float: left;
+    display: inline-block;
+}
+.inline-list3 li h3{
+    color: #3F7CAC;
+}
+
+.img-box{
+    display: inline-block;
+    margin: 0px 1.667%;
+    width 100%;
+    overflow: hidden;
+    display: block;
+}
+.img-box img{
+    display: block;
+    transition: all .4s ease-in-out;
+    width: auto;
+    height: 14em;
+    opacity: .8;
+    -webkit-filter: blur(1px);
+    -moz-filter: blur(1px);
+    -o-filter: blur(1px);
+    -ms-filter: blur(1px);
+    filter: blur(1px);
+}
+.img-box img:hover {
+    transform: scale(1.08);
+    opacity: 1;
+    -webkit-filter: blur(0px);
+    -moz-filter: blur(0px);
+    -o-filter: blur(0px);
+    -ms-filter: blur(0px);
+    filter: blur(0px);
+    border-radius: 0px;
+}
+/*==================
+=======Footer=======
+==================*/
+footer .push-down{
+    position: relative;
+    top: 50%
+}
+footer .contact a{border-bottom: none;color: #ddd}
+footer .footer-icons a{border-bottom: none;color: #ddd}
+footer .contact{
+    width: 100%;
+    height: 17em;
+    display: block;
+    background: #4f5a65;
+    margin-top: 30px;
+    padding: 0
+}
+footer .contact i{
+    color: #FFFCF9
+}
+footer .footer-icons{
+    background: #3F7CAC;
+    padding: 20px 0 20px 0
+}
+footer .footer-icons i {
+    margin: 0px 15px;
+    color: #FFFCF9;
+}
+footer .made-by-shuffzco {
+    height: 2.5em;
+    background: #FFFCF9;
+    font-size: 1.2em;
+    line-height: 40px;
+    color: #4f5a65;
+    margin: 0px auto
+}
+footer .made-by-shuffzco a{
+    color:#3F7CAC;
+}
+footer{margin: 0;padding: 0}
+
+/*======================
+=======Responsive=======
+======================*/
+@media screen and (max-width: 769px){
+header img{margin-top: 20px;width: 60%;}
+.container{
+    margin: 20 auto;
+    width: 95%;
+    transition:all .4s;
+    text-align: center
+}
+.inline-list2 li,.inline-list3 li{
+    width: 100%;
+    margin: 20px auto;
+}
+.inline-list3 li:nth-child(2){
+    margin: 0px 0.5%;
+}
+.img-box{
+    float: left;
+    display: inline-block;
+    margin: 20px 1.667%;
+    width: 97%
+    }
+.img-box img{
+    transition: all .4s ease-in-out;
+    width: 24em;
+    height: 18em;
+    opacity: 1;
+    margin: 0 auto;
+    -webkit-filter: blur(1px);
+    -moz-filter: blur(1px);
+    -o-filter: blur(1px);
+    -ms-filter: blur(1px);
+    filter: blur(1px);
+    }
+
+
+footer .contact{
+    height: 6em;
+    }
+    footer .push-down{
+    position: relative;
+    top: 25%
+    }
+}
+
+
+
+@media screen and (min-width: 770px) and (max-width: 1080px) {
+.container {
+    width: 90%;
+    margin: 0 auto;
+    transition:all .4s;
+}
+}
