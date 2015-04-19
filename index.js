@@ -17,6 +17,6 @@ require('./server_js/blog')(app, db);
 
 app.get('/', function(req, res){
   res.render('index');
-});
+}); 
 
 app.listen(3000);
