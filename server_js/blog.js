@@ -35,7 +35,7 @@ module.exports = function(app, db) {
   //See all posts that can be edited.
   app.get('/blog/admin/edit', function(req, res) {
     if (!req.session.username) {
-      res.redirect('login');
+      res.redirect('/login');
       return;
     } else {
       db.posts.find(function(err, docs) {

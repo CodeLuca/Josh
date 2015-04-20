@@ -3,10 +3,10 @@ module.exports = function(app, db) {
 	app.get('/projects/admin', function(req, res) {
 		//Check if logged in already.
 		if (!req.session.username) {
-			res.render('login');
+			res.redirect('/login');
 			return;
 		} else {
-			res.redirect('admin')
+			res.render('admin')
 		}
 	});
 }
