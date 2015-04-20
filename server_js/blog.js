@@ -13,7 +13,7 @@ module.exports = function(app, db) {
   app.get('/blog/admin', function(req, res) {
     //Check if logged in already.
     if (!req.session.username) {
-      res.render('login');
+      res.redirect('/login');
       return;
     } else {
       res.render('admin')
@@ -35,7 +35,7 @@ module.exports = function(app, db) {
   //See all posts that can be edited.
   app.get('/blog/admin/edit', function(req, res) {
     if (!req.session.username) {
-      res.render('login');
+      res.redirect('login');
       return;
     } else {
       db.posts.find(function(err, docs) {
