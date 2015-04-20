@@ -1,6 +1,3 @@
-</div> 
-</header>
-
 <div name="start" class="start">
 <!--
 About
@@ -13,8 +10,11 @@ About
 Projects
 -->
 {{#each posts}}
-<div class="container inline-list">
+<div class="container inline-list" style="background: #d9d9d9; padding-top: 10px; padding-left: 10px; padding-bottom: 10px; padding-right: 10px;">
   <center><h2>{{title}}</h2></center>
   {{body}}
 </div>
 {{/each}}
+
+<br>
+<center><a href="/blog/admin"><button name="button">Admin Panel</button></a></center>

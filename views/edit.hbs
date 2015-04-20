@@ -1,21 +1,28 @@
-</div> 
-</header>
+
 
 <div name="start" class="start">
 <!--
 About
 -->
 <div class="container">
-<h2>Joshua's Blog:</h2>
+<a href="/blog"><h2>Joshua's Blog:</h2></a>
 </div>
 
 <!--
 Projects
 -->
 {{#each posts}}
-<div class="container inline-list">
+<div class="container inline-list" style="background: #d9d9d9; padding-top: 10px; padding-left: 10px; padding-bottom: 10px; padding-right: 10px;">
   <center><h2>{{title}}</h2></center>
-  {{body}}
-  <a href="/blog/admin/edit/{{title}}"><button type="button" name="button">Edit</button></a>
+  {{body}}<br><br>
+  <a href="/blog/admin/edit/{{title}}"><button type="button" name="button" style="margin-bottom: 5px">Edit</button></a><br>
+  <button id="delete" onclick="del('{{title}}')" name="button">Delete</button>
 </div>
 {{/each}}
+
+<script>
+  function del(title){
+    $.post('/blog/admin/delete', {'title': title});
+    location.reload();
+  }
+</script>

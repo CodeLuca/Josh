@@ -1,30 +1,56 @@
-<section class="push-down center">
+<header>
+    <div class="container">
+      <section class="push-down center">
     <a href="#"><img src="/josh.jpg"></a>
     <h1>Joshua Powell</h1>
     <h2><a href="http://joshualpowell.com/">Blog Administration</a></h2>
 
     <a href="#start" id="arrow-down"><i class="fa fa-chevron-down fa-2x"></i></a>
 </section>
-</div> 
+</div>
 </header>
 
 <div name="start" class="start">
-<!--
+    <!--
 About
 -->
-<div class="container">
-<h2>Write a Post:</h2>
-</div>
 
-<!--
+
+
+    <!--
 Projects
 -->
-<div class="container inline-list">
-<form action="/blog/post" method="post">
-  <input type="text" name="title" placeholder="Title"><br><br>
-  <textarea name="body" placeholder="Body"></textarea>
-  <input type="submit">
-</form>
-<br>
-<a href="/blog/admin/edit"><button type="button" name="button">Edit Posts</button></a>
-</div>
+    <div class="container inline-list" style="background: #d9d9d9; padding-top: 10px; padding-left: 10px; padding-bottom: 10px; padding-right: 10px;">
+          <h2>Write a Post:</h2>
+            <form action="/blog/post" method="post">
+            <input type="text" name="title" placeholder="Title">
+            <br>
+            <br>
+            <textarea name="body" placeholder="Body"></textarea><br><br>
+            <input type="submit">
+        </form>
+        <br>
+        <a href="/blog/admin/edit">
+            <button type="button" name="button">Edit Posts</button>
+        </a>
+    </div>
+
+    <br>
+
+
+    <div class="container inline-list" style="background: #d9d9d9; padding-top: 10px; padding-left: 10px; padding-bottom: 10px; padding-right: 10px;">
+          <h2>New Project:</h2>
+        <form action="/projects/new" method="post">
+            <input type="text" name="title" placeholder="Title">
+            <br>
+            <br>
+            <textarea name="body" placeholder="Information"></textarea>
+            <br>
+            <br>
+            <input type="text" name="name" placeholder="Image URL">
+            <br>
+            <br>
+            <input type="submit">
+        </form>
+        <br>
+    </div>

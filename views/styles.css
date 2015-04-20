@@ -10,7 +10,7 @@ h2{font-size:1.6em;font-weight:600;color: #3F7CAC;margin-bottom: 10px;}
 h3{font-size:1.3em;font-weight:400;color: #3F7CAC;}
 p{font-size:1.1em;color: #4f5a65;display: block;margin: 0 auto}
 a{color:#3F7CAC;text-decoration:none;border-bottom: 2px dotted #3F7CAC;}
-a:hover{transition:all ease .5s;border-bottom: none;opacity: .6}
+/*a:hover{transition:all ease .5s;border-bottom: none;opacity: .6}*/
 footer{clear:both;text-align: center;margin-top: 0px;font-size: 0.8em;}
 footer a{color: #3F7CAC;}
 footer a:hover{color: #dcdcdc}
@@ -21,6 +21,37 @@ footer a:hover{color: #dcdcdc}
 .start{padding-top: 20px}
 #arrow-down{display: block;margin-top: 60px}
 body{font-family:Open sans,Helvitca,Arial;background:white;}
+
+input, textarea {
+  border: 5px solid #b6b6b6;
+  padding: 5px;
+  width: 25%;
+  height: 10%;
+}
+
+input[type="submit"], button {
+  cursor: pointer;
+  padding: 5px;
+  border: 5px solid white;
+  padding-top: 1px;
+  padding-left: 4px;
+  padding-right: 1px;
+  width: 25%;
+  height: 10%;
+}
+
+input[type="submit"]:hover, button:hover {
+  transition:all ease .5s;
+  cursor: pointer;
+  padding: 5px;
+  background: #747474;
+  border: 5px solid white;
+  padding-top: 1px;
+  padding-left: 4px;
+  padding-right: 1px;
+  width: 25%;
+  height: 10%;
+}
 
 /*=====================
 =======Container=======
