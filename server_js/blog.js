@@ -50,8 +50,9 @@ module.exports = function(app, db) {
   app.get('/blog/admin/edit/:name', function(req, res) {
     var name = req.params.name;
     db.posts.find({
-      'title': name
+      'title': req.params.name
     }, function(err, docs) {
+      console.log(docs)
       res.render('editPost', {
         'title': name,
         'body': docs[0].body
@@ -61,14 +62,13 @@ module.exports = function(app, db) {
 
   app.post('/blog/admin/edit', function(req, res) {
     db.posts.update({
-      'title': req.body.name
+      'title': req.body.title
     }, {
       $set: {
-        'title': req.body.name,
         'body': req.body.body
       }
     }, function() {
-      // fix
+      res.redirect('/blog');
     });
   });
 

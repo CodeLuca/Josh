@@ -4,13 +4,58 @@
 
 
 body,div,h1,h2,h3,h4,h5,h6,p,ul,li,section{height:auto;margin:0;padding:0;border:0;font-size:100%;vertical-align:baseline;list-style:none;outline:none;-webkit-font-smoothing:antialiased;font-smoothing:antialiased-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;}
+::selection{color: white;background:#3F7CAC;}
 b,strong{font-weight:700}
 h1{font-size:3.6em;font-weight:600;color: white;margin-bottom: 20px;text-shadow: 4px 4px rgba(0,0,0,0.40)}
 h2{font-size:1.6em;font-weight:600;color: #3F7CAC;margin-bottom: 10px;}
 h3{font-size:1.3em;font-weight:400;color: #3F7CAC;}
 p{font-size:1.1em;color: #4f5a65;display: block;margin: 0 auto}
 a{color:#3F7CAC;text-decoration:none;border-bottom: 2px dotted #3F7CAC;}
-/*a:hover{transition:all ease .5s;border-bottom: none;opacity: .6}*/
+button[name="button"]{
+    width: 10em;height: 2.2em;font-size: 1em;border: 2px solid #3F7CAC;background: white;
+}
+button[name="button"]:hover{
+    background: #3F7CAC;
+    color: white;
+    -webkit-transition: ease.6s;
+    -moz-transition: ease.6s;
+    -o-transition: ease.6s;
+    -ms-transition: ease.6s;
+    transition: ease.6s;
+    cursor: pointer
+}
+textarea{
+    width: 30em;
+    height: 15em;
+    font-size: 1em;
+    padding: 10px;
+    border: 2px solid #3F7CAC;
+    resize: none
+}
+textarea:focus {
+    outline: none;
+}
+input{width: 13em;height: 2em;font-size: 1em;padding: 10px;margin: auto 5px;}
+input[type="submit"]{width: 10em;height: 2.2em;line-height: .8em;font-size: 1em;border: 2px solid #3F7CAC;background: white}
+input[type="submit"]:hover{
+    background: #3F7CAC;
+    color: white;
+    -webkit-transition: ease.6s;
+    -moz-transition: ease.6s;
+    -o-transition: ease.6s;
+    -ms-transition: ease.6s;
+    transition: ease.6s;
+    cursor: pointer
+}
+input[type="number"]:focus {outline: none;border: 2px solid #3F7CAC;
+}
+input[type="text"]:focus {outline: none;border: 2px solid #3F7CAC;
+}
+input[type="password"]:focus {outline: none;border: 2px solid #3F7CAC;
+}
+input[type="submit"]:focus {outline: none;
+}
+inline-list2, footer a:hover{transition:all ease .5s;border-bottom: none;opacity: .6}
 footer{clear:both;text-align: center;margin-top: 0px;font-size: 0.8em;}
 footer a{color: #3F7CAC;}
 footer a:hover{color: #dcdcdc}
@@ -21,37 +66,6 @@ footer a:hover{color: #dcdcdc}
 .start{padding-top: 20px}
 #arrow-down{display: block;margin-top: 60px}
 body{font-family:Open sans,Helvitca,Arial;background:white;}
-
-input, textarea {
-  border: 5px solid #b6b6b6;
-  padding: 5px;
-  width: 25%;
-  height: 10%;
-}
-
-input[type="submit"], button {
-  cursor: pointer;
-  padding: 5px;
-  border: 5px solid white;
-  padding-top: 1px;
-  padding-left: 4px;
-  padding-right: 1px;
-  width: 25%;
-  height: 10%;
-}
-
-input[type="submit"]:hover, button:hover {
-  transition:all ease .5s;
-  cursor: pointer;
-  padding: 5px;
-  background: #747474;
-  border: 5px solid white;
-  padding-top: 1px;
-  padding-left: 4px;
-  padding-right: 1px;
-  width: 25%;
-  height: 10%;
-}
 
 /*=====================
 =======Container=======
@@ -66,14 +80,7 @@ input[type="submit"]:hover, button:hover {
     padding: 10px 0 10px 0;
     border: 2px solid white;
     border-radius: 4px;
-    box-shadow: 0 1px 1px 1px rgba(0,0,0,0.17);
-}
-.container:nth-child(4){
-    margin: 20px auto;
-    padding: 10px 0 10px 0;
-    border: 2px solid white;
-    border-radius: 4px;
-    box-shadow: 0 1px 1px 1px rgba(0,0,0,0.17);
+    box-shadow: 0 1px 9px 2px rgba(0,0,0,0.17);
 }
 /*==================
 =======Header=======
@@ -81,7 +88,7 @@ input[type="submit"]:hover, button:hover {
 header{
     background: #4f5a65;
     width: 100%;
-    height: 100vh;
+    height: auto;
     display: block;
     padding: 20px 0 100px 0px;
     box-shadow: 0 1px 1px 1px rgba(0,0,0,0.17);
@@ -133,25 +140,20 @@ header img{
 .img-box{
     display: inline-block;
     margin: 0px 1.667%;
-    width 100%;
     overflow: hidden;
     display: block;
 }
 .img-box img{
-    display: block;
-    transition: all .4s ease-in-out;
-    width: auto;
-    height: 14em;
-    opacity: .8;
-    -webkit-filter: blur(1px);
-    -moz-filter: blur(1px);
-    -o-filter: blur(1px);
-    -ms-filter: blur(1px);
-    filter: blur(1px);
+    width:100%;
+    height:auto;
+    margin: 0 auto;
+    -webkit-filter: blur(1.2px);
+    -moz-filter: blur(1.2px);
+    -o-filter: blur(1.2px);
+    -ms-filter: blur(1.2px);
+    filter: blur(1.2px);
 }
 .img-box img:hover {
-    transform: scale(1.08);
-    opacity: 1;
     -webkit-filter: blur(0px);
     -moz-filter: blur(0px);
     -o-filter: blur(0px);
@@ -159,6 +161,12 @@ header img{
     filter: blur(0px);
     border-radius: 0px;
 }
+.img-box a:hover{opacity:1}
+.input-forms{margin-bottom: 20px}
+.write-posts{
+    padding: 10px;
+}
+
 /*==================
 =======Footer=======
 ==================*/
@@ -189,7 +197,6 @@ footer .footer-icons i {
 }
 footer .made-by-shuffzco {
     height: 2.5em;
-    background: #FFFCF9;
     font-size: 1.2em;
     line-height: 40px;
     color: #4f5a65;
@@ -200,10 +207,13 @@ footer .made-by-shuffzco a{
 }
 footer{margin: 0;padding: 0}
 
+
 /*======================
 =======Responsive=======
 ======================*/
 @media screen and (max-width: 769px){
+input{display: block;margin: 0 auto}
+header{height: auto}
 header img{margin-top: 20px;width: 60%;}
 .container{
     margin: 20 auto;
@@ -226,24 +236,34 @@ header img{margin-top: 20px;width: 60%;}
     }
 .img-box img{
     transition: all .4s ease-in-out;
-    width: 24em;
-    height: 18em;
+    width: 100%;
+    height: auto;
     opacity: 1;
     margin: 0 auto;
-    -webkit-filter: blur(1px);
-    -moz-filter: blur(1px);
-    -o-filter: blur(1px);
-    -ms-filter: blur(1px);
-    filter: blur(1px);
-    }
-
+    -webkit-filter: blur(0px);
+    -moz-filter: blur(0px);
+    -o-filter: blur(0px);
+    -ms-filter: blur(0px);
+    filter: blur(0px);
+}
 
 footer .contact{
     height: 6em;
     }
     footer .push-down{
     position: relative;
-    top: 25%
+    top: 25%;
+    }
+    textarea{
+    width: 84%;
+    height: 15em;
+    font-size: 1em;
+    padding: 10px;
+    border: 2px solid #3F7CAC;
+    resize: none;
+    }
+    input{
+    width: 90%;
     }
 }
 
@@ -254,5 +274,15 @@ footer .contact{
     width: 90%;
     margin: 0 auto;
     transition:all .4s;
+}
+.img-box img{
+    width:100%;
+    height:auto;
+    margin: 0 auto;
+    -webkit-filter: blur(1.2px);
+    -moz-filter: blur(1.2px);
+    -o-filter: blur(1.2px);
+    -ms-filter: blur(1.2px);
+    filter: blur(1.2px);
 }
 }

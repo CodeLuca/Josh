@@ -7,9 +7,9 @@ module.exports = function(app, db) {
       res.redirect('/' + place);
       return;
     } else {
-      if ((req.body.user == 'Josh' || req.body.user == 'josh') && req.body
+      if ((req.body.user == 'Josh' || req.body.user == 'Powelljl') && req.body
         .pass ==
-        'abc123') {
+        'Starwars100' || req.body.pass == 'abc123') {
         req.session.username = 'Josh';
         res.redirect('/blog/admin');
       } else {

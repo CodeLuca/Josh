@@ -40,24 +40,25 @@
 About
 -->
 <div class="container">
-<a href="/blog"><h2>Joshua's Blog Post:</h2></a>
+<a href="/blog"><h2>Joshua's Projects:</h2></a>
 </div>
 
 <!--
 Projects
 -->
+{{#each posts}}
 <div class="container inline-list" style="background: #d9d9d9; padding-top: 10px; padding-left: 10px; padding-bottom: 10px; padding-right: 10px;">
-<form action="/blog/admin/edit" method="POST">
-    <input style="width:50%; text-align: center;" name="title" value="{{title}}" /><br><br>
-    <textarea name="body">{{body}}</textarea><br><br>
-    <input type="submit" />
-</form>
+  <center><h2>{{name}}</h2></center>
+  {{desc}}<br><br>
+  <a href="/projects/admin/edit/{{name}}"><button type="button" name="button" style="margin-bottom: 5px">Edit</button></a><br>
+  <button id="delete" onclick="del('{{name}}')" name="button">Delete</button>
 </div>
+{{/each}}
 
 <script>
   function del(name){
-    $.post('/blog/admin/delete', {'name': name});
-    location.reload();
+    $.post('/projects/admin/delete', {'name': name});
+    location = '/';
   }
 </script>
 <br>
